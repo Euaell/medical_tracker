@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import 'remixicon/fonts/remixicon.css'
 import Link from "next/link";
 
 
@@ -21,20 +22,28 @@ export default function RootLayout({
 						<h1 className="text-cyan-700 text-5xl p-4 font-extrabold">Medi-Track</h1>
 					</div>
 					
-					<ul className="flex flex-col border-r-2 border-slate-300 h-full">
-						<li>
-							<Link href="/">Home</Link>
+					<ul className="flex flex-col border-r-2 border-slate-300 h-full gap-4">
+						<li className="bg-cyan-100 rounded-full">
+							<Link href="/" className="flex flex-row justify-between py-2 items-center px-4">
+								<i className="ri-home-heart-line ri-lg"></i>
+								<span>
+									Home
+								</span>
+							</Link>
 						</li>
 						<li>
-							<Link href="/medications">Medications</Link>
+							<Link href="/medications">
+								<i className="ri-medicine-bottle-line ri-lg"></i>
+								Medications
+							</Link>
 						</li>
 						<li>
 							<Link href="/vitals">Vitals</Link>
 						</li>
-						<li className="mt-auto">
+						<li className="mt-auto ml-auto mr-8">
 							<Link href="/settings">
 								<span className="sr-only">Settings</span>
-								{/* <CogIcon className="h-6 w-6" aria-hidden="true" /> */}
+								<i className="ri-settings-5-line ri-2x"></i>
 							</Link>
 						</li>
 					</ul>
