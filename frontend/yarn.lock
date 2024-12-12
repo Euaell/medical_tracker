@@ -2117,7 +2117,7 @@ regexp.prototype.flags@^1.5.2, regexp.prototype.flags@^1.5.3:
 
 remixicon@^4.5.0:
   version "4.5.0"
-  resolved "https://registry.yarnpkg.com/remixicon/-/remixicon-4.5.0.tgz#75d625b89a98ae0322a5d39935366d59143172ee"
+  resolved "https://registry.npmjs.org/remixicon/-/remixicon-4.5.0.tgz"
   integrity sha512-IP/wNQGG3JCigaeFF3DERSTqMIZBlNu1yu8clNGB7wFe7ZN/ueKMplFHL5uEbnGpCzqfY6MlxIYn2vRzub+5cQ==
 
 resolve-from@^4.0.0:

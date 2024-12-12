@@ -48,7 +48,7 @@ export default function RootLayout({
 						</li>
 					</ul>
 				</nav>
-				<main>
+				<main className="w-full">
 					{children}
 				</main>
 			</body>

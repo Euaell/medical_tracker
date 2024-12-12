@@ -1,12 +1,11 @@
-
+import Pagination from "@/components/Pagination";
 
 export default function VitalSign(){
 
     return (
         <div>
-            <p className="text-cyan-700 "> Vital Sign Chart</p>
 
-            <div className="w-1/2 m-2 flex">
+            <div className="w-1/2 mx-2 my-4 flex">
                 <div>
                     <input type="text" placeholder="Search..."
                            className="w-full border border-gray-300 rounded-md py-1 px-2"/>
@@ -27,18 +26,18 @@ export default function VitalSign(){
                     <button className="bg-cyan-500 border rounded-md px-4 py-1 ">Apply</button>
                 </div>
             </div>
-
-            <div className="w-4/6  border rounded-md border-gray-200 shadow mx-auto">
-                <table className="w-full table-auto ">
-                    <thead>
-                    <tr>
+            <div className="w-4/6">
+                <div className="border rounded-md border-gray-200 shadow ">
+                    <table className="w-full  ">
+                        <thead>
+                        <tr>
                             <th className="p-2">#</th>
                             <th className="p-2">Urine Output</th>
                             <th className="p-2">Time</th>
                             <th className="p-2">Date</th>
                         </tr>
-                    </thead>
-                    <tbody className="text-center">
+                        </thead>
+                        <tbody className="text-center">
                         <tr>
                             <td className="font-thin p-2">1</td>
                             <td className="font-thin p-2">300 ml</td>
@@ -59,10 +58,14 @@ export default function VitalSign(){
                             <td className="font-thin p-2">6 PM</td>
                             <td className="font-thin p-2">December 11, 2024</td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
 
+
+                </div>
+                < Pagination pageSize={10} offset={10}/>
             </div>
+
         </div>
     )
 
