@@ -4,7 +4,7 @@ import NavItem from "./NavItem";
 
 export default function Navbar() {
 	return (
-		<nav className="flex flex-col min-h-full mr-8 gap-6 p-6 min-w-fit border-r-2 border-slate-100 transition-all duration-200">
+		<nav className="flex flex-col min-h-full gap-6 p-6 min-w-fit border-r-2 border-slate-100 transition-all duration-200">
 
 			<div className="flex justify-end cursor-pointer text-slate-600 hover:text-slate-500">
 				<i className="ri-side-bar-line ri-xl"></i>

@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import 'remixicon/fonts/remixicon.css'
-import Link from "next/link";
-import { twMerge } from "tailwind-merge";
 import Navbar from "@/components/Navbar";
 
 
@@ -16,7 +14,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode; }>) {
 	return (
 		<html lang="en">
-			<body className="flex flex-row min-h-screen w-full">
+			<body className="flex flex-row min-h-screen w-screen gap-8">
 				<Navbar />
 				<main className="w-full">
 					{children}
